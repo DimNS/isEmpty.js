@@ -1,6 +1,5 @@
 (function() {
     if (!window.hasOwnProperty('isEmpty')) window.isEmpty = isEmpty;
-    if (!window.hasOwnProperty('isNotEmpty')) window.isNotEmpty = isNotEmpty;
 
     /**
      * Javascript empty value checker
