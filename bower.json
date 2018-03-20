@@ -1,0 +1,12 @@
+{
+  "name": "isEmpty.js",
+  "description": "Javascript empty value checker",
+  "homepage": "https://github.com/DimNS/isEmpty.js",
+  "authors": [
+    "DimNS <atomcms@ya.ru>"
+  ],
+  "keywords": [
+    "isEmpty"
+  ],
+  "license": "MIT"
+}
