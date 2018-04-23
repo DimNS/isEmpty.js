@@ -3,14 +3,14 @@
 ### **`isEmpty(value)`**
 Check for empty value (null, undefined, number, string, object or array).
 
-## Usage
-
+## Install
 ```bash
 bower install --save isEmpty.js
 ```
 
+## Usage
 ```html
-<script type="text/javascript" src="bower_components/isEmpty.js/dist/isEmpty.min.js">
+<script type="text/javascript" src="dist/isEmpty.min.js">
 <script type="text/javascript">
     // true
     console.log(isEmpty(null));
