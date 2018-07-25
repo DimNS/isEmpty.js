@@ -9,7 +9,7 @@ bower install --save isEmpty.js
 ```
 или
 ```bash
-npm i isEmpty.js
+npm i dimns-is-empty-js
 ```
 
 ## Usage
