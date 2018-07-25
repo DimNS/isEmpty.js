@@ -1,4 +1,13 @@
 {
+  "name": "isEmpty.js",
+  "description": "Javascript empty value checker",
+  "version": "1.0.2",
+  "homepage": "https://github.com/DimNS/isEmpty.js",
+  "author": "DimNS <dimns@dimns.ru>",
+  "keywords": [
+    "isEmpty"
+  ],
+  "license": "MIT",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-rename": "^1.2.2",

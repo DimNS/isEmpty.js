@@ -7,6 +7,10 @@ Check for empty value (null, undefined, number, string, object or array).
 ```bash
 bower install --save isEmpty.js
 ```
+или
+```bash
+npm i isEmpty.js
+```
 
 ## Usage
 ```html
