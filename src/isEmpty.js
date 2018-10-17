@@ -1,4 +1,4 @@
-(function() {
+(function () {
     if (!window.hasOwnProperty('isEmpty')) window.isEmpty = isEmpty;
 
     /**
@@ -6,15 +6,17 @@
      *
      * @param {null|undefined|number|string|object|array} value
      *
-     * @version 20.03.2018
-     * @author DimNS <atomcms@ya.ru>
+     * @version 17.10.2018
+     * @author  DimNS <atomcms@ya.ru>
      */
     function isEmpty(value) {
         if (value === null) {
             return true;
         }
 
-        switch (typeof(value)) {
+        var type = typeof(value);
+
+        switch (type) {
             case 'undefined':
                 return true;
 
@@ -29,7 +31,7 @@
                 return countKeys < 1;
 
             default:
-                console.log('Undefined value type', 'isEmpty.js');
+                console.log('Undefined value type: "' + type + '"', 'isEmpty.js');
                 return false;
         }
     }
