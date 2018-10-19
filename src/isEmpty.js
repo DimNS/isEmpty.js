@@ -6,7 +6,7 @@
      *
      * @param {null|undefined|number|string|object|array} value
      *
-     * @version 17.10.2018
+     * @version 19.10.2018
      * @author  DimNS <atomcms@ya.ru>
      */
     function isEmpty(value) {
@@ -30,8 +30,11 @@
                 var countKeys = Object.keys(value).length;
                 return countKeys < 1;
 
+            case 'function':
+                return false;
+
             default:
-                console.log('Undefined value type: "' + type + '"', 'isEmpty.js');
+                console.log('Unknown value type: "' + type + '"', 'isEmpty.js');
                 return false;
         }
     }
