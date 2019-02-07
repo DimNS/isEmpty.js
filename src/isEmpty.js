@@ -4,7 +4,7 @@
     /**
      * Javascript empty value checker
      *
-     * @param {null|undefined|number|string|object|array} value
+     * @param {null|undefined|number|string|object|array|function|boolean} value
      *
      * @version 07.02.2019
      * @author  DimNS <atomcms@ya.ru>
