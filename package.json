@@ -9,9 +9,13 @@
     "isEmpty.js"
   ],
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DimNS/isEmpty.js.git"
+  },
   "devDependencies": {
     "gulp": "^3.9.1",
-    "gulp-rename": "^1.2.2",
+    "gulp-rename": "^1.4.0",
     "gulp-uglify": "^1.5.4"
   }
 }
