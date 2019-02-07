@@ -2,19 +2,21 @@ var gulp   = require('gulp');
 var rename = require('gulp-rename');
 var uglify = require('gulp-uglify');
 
-gulp.task('default', function () {
-    gulp.watch('src/*.js', ['js']);
-});
+gulp.task('default', ['build', 'watcher.js']);
 
-gulp.task('build', ['js'], function () {
+gulp.task('build', ['js', 'js.min']);
 
+gulp.task('watcher.js', function () {
+    return gulp.watch('src/*.js', ['build']);
 });
 
 gulp.task('js', function () {
-    gulp.src('src/isEmpty.js')
+    return gulp.src('src/isEmpty.js')
         .pipe(gulp.dest('dist'));
+});
 
-    gulp.src('src/isEmpty.js')
+gulp.task('js.min', function () {
+    return gulp.src('src/isEmpty.js')
         .pipe(uglify())
         .pipe(rename('isEmpty.min.js'))
         .pipe(gulp.dest('dist'));
