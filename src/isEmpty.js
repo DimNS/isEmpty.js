@@ -6,7 +6,7 @@
      *
      * @param {null|undefined|number|string|object|array} value
      *
-     * @version 19.10.2018
+     * @version 07.02.2019
      * @author  DimNS <atomcms@ya.ru>
      */
     function isEmpty(value) {
@@ -31,6 +31,7 @@
                 return countKeys < 1;
 
             case 'function':
+            case 'boolean':
                 return false;
 
             default:
