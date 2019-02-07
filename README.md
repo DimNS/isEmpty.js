@@ -5,10 +5,6 @@ Check for empty value (null, undefined, number, string, object or array).
 
 ## Install
 ```bash
-bower install --save isEmpty.js
-```
-или
-```bash
 npm i dimns-is-empty-js
 ```
 
