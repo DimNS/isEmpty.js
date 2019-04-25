@@ -1,7 +1,7 @@
 {
   "name": "dimns-is-empty-js",
   "description": "Javascript empty value checker",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "homepage": "https://github.com/DimNS/isEmpty.js",
   "author": "DimNS <dimns@dimns.ru>",
   "keywords": [
@@ -16,6 +16,7 @@
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-rename": "^1.4.0",
-    "gulp-uglify": "^1.5.4"
+    "gulp-uglify": "^1.5.4",
+    "qunit": "^2.9.2"
   }
 }
