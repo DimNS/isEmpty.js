@@ -20,3 +20,26 @@ QUnit.test('isEmpty() return false', function (assert) {
     assert.ok(!isEmpty(true), 'isEmpty(true) === false');
     assert.ok(!isEmpty(false), 'isEmpty(false) === false');
 });
+
+QUnit.test('notEmpty() return false', function (assert) {
+    assert.ok(!notEmpty(null), 'notEmpty(null) === false');
+    assert.ok(!notEmpty(undefined), 'notEmpty(undefined) === false');
+    assert.ok(!notEmpty(NaN), 'notEmpty(NaN) === false');
+    assert.ok(!notEmpty(""), 'notEmpty("") === false');
+    assert.ok(!notEmpty("    "), 'notEmpty("MANY-SPACES-HERE") === false');
+    assert.ok(!notEmpty({}), 'notEmpty({}) === false');
+    assert.ok(!notEmpty([]), 'notEmpty([]) === false');
+});
+
+QUnit.test('notEmpty() return true', function (assert) {
+    assert.ok(notEmpty("null"), 'notEmpty("null") === true');
+    assert.ok(notEmpty("undefined"), 'notEmpty("undefined") === true');
+    assert.ok(notEmpty(0), 'notEmpty(0) === true');
+    assert.ok(notEmpty(123), 'notEmpty(123) === true');
+    assert.ok(notEmpty("    string   "), 'notEmpty("MANY-SPACES-HEREstringMANY-SPACES-HERE") === true');
+    assert.ok(notEmpty({"1": "111", "2": "222"}), 'notEmpty({"1": "111", "2": "222"}) === true');
+    assert.ok(notEmpty(["111", "222"]), 'notEmpty(["111", "222"]) === true');
+    assert.ok(notEmpty(function() {}), 'notEmpty(function() {}) === true');
+    assert.ok(notEmpty(true), 'notEmpty(true) === true');
+    assert.ok(notEmpty(false), 'notEmpty(false) === true');
+});
