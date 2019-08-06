@@ -1,7 +1,7 @@
 {
   "name": "dimns-is-empty-js",
   "description": "Javascript empty value checker",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "homepage": "https://github.com/DimNS/isEmpty.js",
   "author": "DimNS <dimns@dimns.ru>",
   "keywords": [
