@@ -3,6 +3,9 @@
 ### **`isEmpty(value)`**
 Check for empty value (null, undefined, number, string, object or array).
 
+### **`notEmpty(value)`**
+Check for not empty value (null, undefined, number, string, object or array).
+
 ## Install
 ```bash
 npm i dimns-is-empty-js
@@ -32,5 +35,26 @@ npm i dimns-is-empty-js
     console.log(isEmpty(function() {}));
     console.log(isEmpty(true));
     console.log(isEmpty(false));
+    
+    // true
+    console.log(notEmpty('null'));
+    console.log(notEmpty('undefined'));
+    console.log(notEmpty(0));
+    console.log(notEmpty(123));
+    console.log(notEmpty('  spaces '));
+    console.log(notEmpty({'1': '111', '2': '222'}));
+    console.log(notEmpty(['111', '222']));
+    console.log(notEmpty(function() {}));
+    console.log(notEmpty(true));
+    console.log(notEmpty(false));
+
+    // false
+    console.log(notEmpty(null));
+    console.log(notEmpty(undefined));
+    console.log(notEmpty(NaN));
+    console.log(notEmpty(''));
+    console.log(notEmpty('    '));
+    console.log(notEmpty({}));
+    console.log(notEmpty([]));
 </script>
 ```
